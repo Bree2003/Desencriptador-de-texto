@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desencriptador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+    </style>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <div class="header">
+            <img src="./img/Top.svg" alt="Logo Alura">
+        </div>
+
+        <div class="input-entrada">
+            <textarea placeholder="Ingrese el texto aquí" required></textarea>
+
+            <span><img src="./img/Vector.svg">Solo letras minúsculas y sin acentos</span>
+            <div class="botones">
+                <button id="encriptar" class="btn-color">Encriptar</button>
+                <button id="desencriptar" class="btn-transparente">Desencriptar</button>
+            </div>
+
+        </div>
+
+        <div class="input-salida">
+            <div class="salvapantalla">
+                <img class="salvapantalla" src="./img/Muñeco.svg" alt="Muñeco">
+                <p class="mensaje-principal salvapantalla">Ningún mensaje fue encontrado</p>
+                <p class="mensaje-secundario salvapantalla">Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+            <div class="respuesta">
+                <p id="mensaje-respuesta"></p>
+                <button id="copiar" class="btn-transparente">Copiar</button>
+            </div>
+            <p></p>
+
+        </div>
+
+
+    </main>
+</body>
+
+</html>
