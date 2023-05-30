@@ -6,18 +6,19 @@ body {
     font-family: 'Inter', sans-serif;
     align-items: center;
     display: flex;
+    justify-content: center;
 }
 
 main {
-    width: 1300px;
+    width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin: 2% auto;
 }
 
 .input-entrada {
-    width: 680px;
-    height: 500px;
+    width: auto;
+    height: auto;
     margin: auto 0;
 }
 
@@ -99,7 +100,7 @@ button {
     background: white;
     border-radius: 32px;
     width: 360px;
-    padding: 20px;
+    padding: 25px;
     height: 560px;
     display: flex;
     justify-content: center;
@@ -140,4 +141,87 @@ button {
     line-height: 150%;
     color: #495057;
     height: 450px;
+}
+
+/* diseño para tablet */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    main {
+        width: auto;
+        margin: 3%;
+        display: block;
+    }
+
+    .input-entrada {
+        margin: 50px 0;
+    }
+
+    .input-salida {
+        width: auto;
+        height: auto;
+    }
+
+    .salvapantalla img {
+        display: none;
+    }
+
+    .respuesta p {
+        height: auto;
+    }
+
+    #copiar {
+        width: 100%;
+    }
+}
+
+/* diseño para celular */
+
+@media screen and (max-width: 767px) {
+
+    main {
+        width: auto;
+        margin: 3%;
+        display: block;
+    }
+
+    .input-entrada {
+        margin: 50px 0;
+    }
+
+    textarea {
+        width: 345px;
+    }
+
+    .botones {
+        display: block;
+    }
+
+    #encriptar,
+    #desencriptar {
+        width: 100%;
+        height: 70px;
+    }
+
+    #encriptar {
+        margin-bottom: 30px;
+    }
+
+    .input-salida {
+        width: auto;
+        height: auto;
+    }
+
+    .salvapantalla img {
+        display: none;
+    }
+
+    .respuesta p {
+        height: auto;
+    }
+
+    #copiar {
+        width: 100%;
+    }
+
 }
